@@ -3,20 +3,22 @@
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
 body {
+  margin: 0px 0px 0px 5px;
   position: relative;
   color: white;
-  height: 100vh;
+  /* height: 100vh; */
   background: linear-gradient(
     200.96deg,
-    #fedc2a -29.09%,
-    #dd5789 51.77%,
-    #7a2c9e 129.35%
+    #24221c -29.09%,
+    #444243 51.77%,
+    #5c5c5c 129.35%
   );
+  /* background: 'grey'; */
   font-family: sans-serif;
   overflow-y: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 button {
@@ -53,10 +55,29 @@ a:hover {
   opacity: 1;
   text-decoration: none;
 }
-
+html,
+body,
+.panel {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+webview {
+  display: block; /* iframes are inline by default */
+  border: none; /* Reset default border */
+  height: 100vh; /* Viewport-relative units */
+  width: 100vw;
+  display: inline-flex !important;
+}
+.web-view {
+  width: 100vw;
+  height: 90vh;
+}
+/*
 .Hello {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0;
-}
+} */
